@@ -1,0 +1,45 @@
+//Brute Force Approach
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if(n%2==0){
+        cout<<"Even number";
+    }
+    else{
+        cout<<"Odd number";
+    }
+}
+
+//Using Bitwise Operation
+//If we have any number ‘n‘ doing bitwise ‘&‘ operation will give resultant as
+1: If n is odd
+0: if n is even
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if(n&1==1){
+        cout<<"Odd number";
+    }
+    else{
+        cout<<"Even number";
+    }
+}
+
+
+//Using ternary operator
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    n%2==0 ? cout<<"Even":cout<<"Odd";
+}
+
+
